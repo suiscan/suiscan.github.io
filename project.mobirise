@@ -1,0 +1,150 @@
+{
+  "settings": {
+    "name": "suiscan",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#232323",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": []
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.13",
+    "siteFonts": [],
+    "sitemapSwitcher": true,
+    "siteUrl": "https://suiscan.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nsitemap: https://suiscan.github.io/sitemap.xml",
+    "favicon": "@PROJECT_PATH@/assets/images/suiscan_1.png",
+    "mbrsiteDomain": "o7i77xiibg",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.13"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Suiscan | Sui Explorer™ | Home Official Site",
+        "meta_descr": "Suiscan is a Feature rich Explorer and Analytics Platform for Sui, a scalable and high-performance Layer-1 network that allows parallel transaction execution.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <img src=\"@PROJECT_PATH@/assets/images/suiscan.png\" alt=\"suiscan\">\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image04-0",
+          "_isUserblock": true,
+          "_cid": "ux6xvHgvPv",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#232323",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#232323"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Suiscan: Revolutionizing Blockchain Transparency and Accessibility</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Introduction:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In the rapidly evolving world of blockchain technology, transparency and accessibility are critical for fostering trust and encouraging widespread adoption. <a href=\"https://suiscan.github.io/\" class=\"text-primary\"><b>Suiscan</b> </a>emerges as a powerful tool designed to enhance the usability and transparency of blockchain networks. By providing users with a comprehensive suite of features for exploring blockchain data, <a href=\"https://suiscan.xyz/\" class=\"text-primary\"><b>Suiscan</b></a> is revolutionizing the way individuals and businesses interact with decentralized technologies. This blog will delve into what Suiscan is, how it works, its key features, and its significance in the broader blockchain ecosystem.<br></p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>What is Suiscan?</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Suiscan is a blockchain explorer and analytics platform specifically designed for the Sui blockchain. It offers users an intuitive interface to explore transactions, analyze smart contracts, and gain insights into the activity on the Sui network. By simplifying access to blockchain data, Suiscan empowers developers, investors, and everyday users to make informed decisions and engage more effectively with decentralized applications (dApps).<br><br><b>Key Features of Suiscan</b><br><b>1.User-Friendly Interface:</b> Suiscan boasts an intuitive design that allows users to easily navigate the platform, regardless of their level of technical expertise.<br><b>2.Comprehensive Transaction Tracking:</b> Users can view real-time transaction data, including details about senders, receivers, timestamps, and transaction fees.<br><b>3.Smart Contract Exploration:</b> Suiscan enables users to explore and interact with smart contracts deployed on the Sui blockchain, providing insights into their functions and operations.<br><b>4.Token Management:</b> Users can view balances, transfer tokens, and track the history of their assets on the Sui network.<br><b>5.Analytics and Insights:</b> Suiscan offers valuable analytics tools that help users understand network activity, token performance, and trends within the blockchain ecosystem.<br><b>6.API Access:</b> Developers can utilize Suiscan’s API to integrate blockchain data into their own applications, enhancing functionality and user experience.<br></p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>How Suiscan Works</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Blockchain Data Collection</b><br>Suiscan operates by collecting and indexing data from the Sui blockchain in real-time. This data includes transaction details, contract interactions, and block information. By continuously monitoring the blockchain, Suiscan ensures that users have access to the most up-to-date information.<br><br><b>2. User Interface</b><br>The Suiscan interface is designed to be user-friendly, featuring clear navigation menus and search functionalities. Users can quickly find information about specific transactions, addresses, or tokens using the search bar. The dashboard provides an overview of the network, highlighting key metrics such as transaction volume and active users.<br><br><b>3. Transaction Tracking</b><br>Suiscan allows users to track individual transactions, providing detailed information about each one. Users can see the transaction hash, block number, sender and receiver addresses, transaction status (pending or confirmed), and the amount transferred. This level of transparency is essential for users looking to verify transactions or analyze patterns in their activity.<br><br><b>4. Smart Contract Interaction</b><br>One of the standout features of Suiscan is its ability to explore smart contracts. Users can view the source code of contracts, check their deployment history, and see how they interact with other contracts and tokens. This transparency fosters trust and encourages developers to build on the Sui network.<br><br><b>5. Token Management</b><br>Suiscan provides tools for managing tokens on the Sui blockchain. Users can view their token balances, transfer tokens to other addresses, and track the history of their transactions. This functionality simplifies asset management and enhances the overall user experience.<br><br><b>6. Analytics Tools</b><br>Suiscan’s analytics tools enable users to gain insights into blockchain activity. Users can view metrics such as transaction volume, active addresses, and token performance over time. These insights can help investors make informed decisions and identify trends within the Sui ecosystem.<br><br><b>7. API Integration</b><br>For developers, Suiscan offers an API that allows them to access blockchain data programmatically. This API can be integrated into applications, providing users with real-time data and enhancing the functionality of dApps built on the Sui blockchain.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Significance of Suiscan in the Blockchain Ecosystem</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Enhancing Transparency</b><br>Suiscan plays a vital role in enhancing transparency within the blockchain ecosystem. By providing users with access to detailed transaction data and smart contract interactions, Suiscan fosters trust among users. This transparency is crucial for attracting new users and encouraging them to explore decentralized technologies.<br><br><b>2. Empowering Developers</b><br>Developers benefit significantly from Suiscan’s features. The ability to explore smart contracts, track transactions, and access blockchain data through the API allows developers to create more robust and user-friendly dApps. This empowerment can lead to increased innovation within the Sui ecosystem.<br><br><b>3. Supporting Investors</b><br>For investors, Suiscan provides valuable insights into the performance of tokens and the overall health of the Sui network. By offering analytics tools and real-time data, Suiscan enables investors to make informed decisions about where to allocate their resources.<br><br><b>4. Fostering Community Engagement</b><br>Suiscan promotes community engagement by providing users with the tools to explore and understand the Sui blockchain. Users can track their activities, participate in governance decisions, and engage with other community members. This sense of community is essential for the long-term success of any blockchain ecosystem.<br><br><b>5. Driving Adoption</b><br>By simplifying access to blockchain data, Suiscan is helping to drive the adoption of the Sui blockchain. As more users become familiar with the platform’s features, they are more likely to engage with decentralized applications and explore the broader DeFi landscape.<br><br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Challenges Facing Suiscan</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Market Competition</b><br>The blockchain explorer market is competitive, with numerous platforms vying for user attention. Suiscan must continually innovate and improve its offerings to differentiate itself from competitors. This includes enhancing user experience, expanding features, and providing comprehensive support for the Sui blockchain.<br><br><b>2. Regulatory Scrutiny</b><br>As blockchain technology continues to gain traction, regulatory scrutiny is increasing. Suiscan must navigate the complex landscape of regulations governing blockchain data and privacy while ensuring compliance with legal standards.<br><br><b>3. Security Risks</b><br>While Suiscan employs robust security measures, the risk of hacks and exploits in the blockchain space is ever-present. The platform must remain vigilant in updating its security protocols and educating users about safe practices to minimize risks.<br><br><b>4. User Education</b><br>As blockchain technology can be complex, educating users about how to utilize Suiscan effectively is crucial. Providing tutorials, guides, and support resources will be important for ensuring that users can maximize the platform’s potential.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><div><b style=\"font-size: 2rem;\">The Future of Suiscan</b><br></div></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Feature Expansion</b><br>As the Sui blockchain ecosystem grows, Suiscan will need to expand its features to meet the evolving needs of users. This could include advanced analytics tools, enhanced visualization options, and integration with other blockchain networks.<br><br><b>2. Cross-Chain Compatibility</b><br>The future of blockchain technology may involve increased cross-chain compatibility. Suiscan could explore opportunities to integrate with other blockchain networks, allowing users to track and analyze assets across multiple ecosystems.<br><br><b>3. Community Building Initiatives</b><br>Investing in community-building initiatives can strengthen Suiscan’s position within the blockchain ecosystem. Hosting events, educational webinars, and community challenges can enhance user involvement and create a loyal user base.<br><br><b>4. Enhanced User Experience</b><br>To stay competitive, Suiscan should continue to invest in improving user experience. This could include advanced search features, personalized recommendations, and mobile app development for on-the-go access to blockchain data.<br><br><b>5. Collaboration with Developers</b><br>Collaborating with developers to create tailored solutions for specific industries can enhance Suiscan’s offerings. By understanding the unique needs of various sectors, Suiscan can provide valuable tools that drive innovation and adoption.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Conclusion</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Suiscan is a powerful tool that enhances transparency and accessibility within the blockchain ecosystem. By providing users with comprehensive features for exploring blockchain data, Suiscan empowers developers, investors, and everyday users to engage more effectively with decentralized technologies.<br><br>As the blockchain landscape continues to evolve, Suiscan must navigate challenges such as market competition, regulatory scrutiny, and security risks. However, with a commitment to innovation and user satisfaction, the platform is well-positioned for future growth.<br><br>For anyone interested in exploring the Sui blockchain and harnessing the power of decentralized technologies, Suiscan offers an invaluable resource. Its focus on transparency, user experience, and community engagement sets it apart in a crowded market, making it an exciting platform to watch as the blockchain ecosystem continues to flourish. Whether you are a developer looking to build on the Sui network or an investor seeking insights into token performance, Suiscan is your gateway to the future of blockchain transparency.<br><br></p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "article07-1",
+          "_isUserblock": true,
+          "_cid": "ux6xvXWt9Y",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
